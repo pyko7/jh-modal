@@ -1,3 +1,4 @@
+import React from "react";
 import Button from "./button/Button";
 import CloseIcon from "./closeIcon/CloseIcon";
 import "./index.css";

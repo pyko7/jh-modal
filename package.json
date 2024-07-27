@@ -1,9 +1,12 @@
 {
   "name": "jh-modal",
   "version": "1.0.0",
-  "description": "a customizable React modal component ",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
+  "description": "A customizable React modal component",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
@@ -14,20 +17,17 @@
   ],
   "author": "Julien Henry",
   "license": "ISC",
-  "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
-  "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.24.9",
     "@babel/preset-react": "^7.24.7",
     "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "rollup": "^4.19.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2"
   }
 }
