@@ -1,5 +1,4 @@
-
-# React Modal Component
+# jh-modal
 
 Welcome to the jh-modal ! This package provides a simple and customizable modal component for React applications, designed to be easily integrated and styled according to your needs.
 
@@ -9,10 +8,6 @@ Welcome to the jh-modal ! This package provides a simple and customizable modal 
 - [Usage](#usage)
   - [Basic Example](#basic-example)
   - [Props](#props)
-  - [Styling](#styling)
-- [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -21,13 +16,14 @@ Install my-project with npm
 ```bash
   npm install jh-modal
 ```
-# Usage 
+
+# Usage
 
 ## Basic Example
 
-```js 
-import React, { useState } from 'react';
-import Modal from 'jh-modal';
+```js
+import React, { useState } from "react";
+import Modal from "jh-modal";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,27 +35,28 @@ const App = () => {
   return (
     <div>
       <button onClick={toggleModal}>Open Modal</button>
-       <Modal
-            title="Employee successfully created"
-            buttonName="Got it!"
-            onClick={handleClose}
-            onClose={handleClose}
-        />
+      <Modal
+        title="Employee successfully created"
+        buttonName="Got it!"
+        onClick={handleClose}
+        onClose={handleClose}
+      />
     </div>
   );
 };
 
 export default App;
 ```
+
 ## Props
 
-| Prop | Type | Description	|
-| ---- | ---- | ----------- |
-| title | string | Title of the modal |  
-| subtitle | string \| undefined | Subtitle of the modal |  
-| buttonName | string \| undefined | Name of the button |
-| onClose | func | Callback fired when the component requests to be closed |
-| onClick | func | Callback fired when the button is clicked|
-| backgroundColor | string | Custom color on modal overlay|
-| modalBackgroundColor | string | Custom color on modal window|
-| customCloseIcon | node | Custom close icon|
+| Prop                 | Type                | Description                                             |
+| -------------------- | ------------------- | ------------------------------------------------------- |
+| title                | string              | Title of the modal                                      |
+| subtitle             | string \| undefined | Subtitle of the modal                                   |
+| buttonName           | string \| undefined | Name of the button                                      |
+| onClose              | func                | Callback fired when the component requests to be closed |
+| onClick              | func                | Callback fired when the button is clicked               |
+| backgroundColor      | string              | Custom color on modal overlay                           |
+| modalBackgroundColor | string              | Custom color on modal window                            |
+| customCloseIcon      | node                | Custom close icon                                       |
