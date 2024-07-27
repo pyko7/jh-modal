@@ -26,16 +26,21 @@ const Modal = ({
   customCloseIcon,
 }) => {
   return (
-    <div className="modal-container">
+    <div className="jh-modal-modal-container">
       <div
-        className="modal-background"
+        className="jh-modal-modal-background"
         style={{ backgroundColor }}
         onClick={onClose}
       ></div>
-      <div className="modal" style={{ backgroundColor: modalBackgroundColor }}>
-        <div className="modal-header">
-          <span className="modal-text modal-title">{title}</span>
-          <div className="modal-button">
+      <div
+        className="jh-modal-modal"
+        style={{ backgroundColor: modalBackgroundColor }}
+      >
+        <div className="jh-modal-modal-header">
+          <span className="jh-modal-modal-text jh-modal-modal-title">
+            {title}
+          </span>
+          <div className="jh-modal-modal-button">
             <Button
               ariaLabel="close modal"
               handleClick={onClose}
@@ -44,12 +49,17 @@ const Modal = ({
               {customCloseIcon ? (
                 customCloseIcon
               ) : (
-                <CloseIcon className="modal-close-icon" ariaHidden={true} />
+                <CloseIcon
+                  className="jh-modal-modal-close-icon"
+                  ariaHidden={true}
+                />
               )}
             </Button>
           </div>
         </div>
-        <span className="modal-text modal-subtitle">{subtitle}</span>
+        <span className="jh-modal-modal-text jh-modal-modal-subtitle">
+          {subtitle}
+        </span>
         {buttonName && (
           <Button ariaLabel={buttonName} handleClick={onClick}>
             {buttonName}

@@ -1,4 +1,4 @@
-.modal-container {
+.jh-modal-modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
 }
-.modal {
+.jh-modal-modal {
   position: relative;
   width: 100%;
   max-width: 350px;
@@ -23,7 +23,7 @@
   border-radius: 7px;
 }
 
-.modal-background {
+.jh-modal-modal-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -33,37 +33,37 @@
   z-index: 1;
 }
 
-.modal-header {
+.jh-modal-modal-header {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.modal-button {
+.jh-modal-modal-button {
   max-width: 2rem;
   height: 100%;
 }
 
-.modal-text {
+.jh-modal-modal-text {
   display: block;
   width: 100%;
 }
 
-.modal-title {
+.jh-modal-modal-title {
   font-size: 1.15rem;
 }
-.modal-subtitle {
+.jh-modal-modal-subtitle {
   font-size: 1rem;
 }
 
-.modal-close-icon {
+.jh-modal-modal-close-icon {
   width: 1.5rem;
   height: 1.5rem;
 }
 
 @media only screen and (min-width: 600px) {
-  .modal {
+  .jh-modal-modal {
     min-width: 500px;
     padding: 2rem;
   }

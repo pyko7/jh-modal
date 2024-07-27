@@ -1,9 +1,9 @@
-.button {
+.jh-modal-button {
   width: 100%;
   cursor: pointer;
 }
 
-.button-contained {
+.jh-modal-button-contained {
   padding: 10px 5px;
   color: #fff;
   background-color: #2563eb;
@@ -11,6 +11,11 @@
   border-radius: 7px;
 }
 
-.button-contained:hover {
+.jh-modal-button-contained:hover {
   opacity: 0.8;
+}
+
+.jh-modal-button-standard {
+  background-color: transparent;
+  border: none;
 }
