@@ -4,10 +4,16 @@ Welcome to the jh-modal ! This package provides a simple and customizable modal 
 
 ## Table of Contents
 
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
   - [Basic Example](#basic-example)
   - [Props](#props)
+
+## Prerequisites
+
+- Node version: Node.js 14 or higher
+- IDE: However use whatever you feel most comfortable with.
 
 ## Installation
 
